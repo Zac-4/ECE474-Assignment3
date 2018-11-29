@@ -121,3 +121,27 @@ operationType parseOp(string in){
         return ERROR_OP;
     }
 }
+
+//FIXME check methods and add functionality
+void setALAPS(operations*, lat) {
+    int earlisetSuc;
+    operations.at(1).setALAP((lat+1));
+    while(!ops.at(0).isALAPed) {
+        for(op:ops) {
+            bool successALAPed = true; earlierstSuc = lat
+            for (suc: ops.successors) {
+                successSched &= suc.ALAPed;
+                if(suc.ALAP<earliestSuc) {
+                    earliestSuc = suc.ALAP;
+                }
+            }
+        }
+        if(sucALAPed) {
+            op.ALAP = earliestSuc - 1;
+            op.ALAPed = true;
+            if(op.ALAP < 0) {
+                ERROR;
+            }
+        }
+    }
+}
